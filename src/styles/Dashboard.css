@@ -1,0 +1,29 @@
+.dashboard-card {
+    border: none;
+    border-radius: 12px;
+    padding: 6px;
+    height: 4px;  /* Reduced height */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-color: #c1baa1;
+    color: #fff;
+  }
+
+  .card-icon {
+    font-size: 1.2rem;  /* Adjusted icon size */
+    color: #2c3930;
+    margin-bottom: 5px;
+  }
+
+  .card-title {
+    font-size: 12px;
+    font-weight: 600;
+  }

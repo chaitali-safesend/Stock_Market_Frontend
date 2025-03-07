@@ -1,0 +1,35 @@
+.stock-list-container {
+    background-color: #ECEBDE;
+    min-height: 100vh;
+    padding: 40px;
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2C3930;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .stock-table {
+    background-color: #D7D3BF;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .stock-table th {
+    background-color: #A59D84;
+    color: #2C3930;
+    font-weight: bold;
+  }
+
+  .stock-table td {
+    color: #2C3930;
+  }
+
+  .stock-table tbody tr:hover {
+    background-color: #C1BAA1;
+    transition: 0.3s;
+  }
