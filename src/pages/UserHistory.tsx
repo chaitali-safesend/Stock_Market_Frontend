@@ -3,6 +3,8 @@ import axios from "axios";
 import { Table, Container, Spinner, Alert } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
+import UserHistoryChart from "../charts/UserHistoryChart";
+
 type HistoryItem = {
   historyId: number;
   userId: number;
@@ -47,6 +49,8 @@ const UserHistory: React.FC = () => {
         User Transaction History
       </h2>
 
+      <UserHistoryChart history={history} />
+
       {loading && <Spinner animation="border" className="d-block mx-auto" />}
       {error && <Alert variant="danger">{error}</Alert>}
       {!loading && history.length === 0 && (
@@ -74,7 +78,10 @@ const UserHistory: React.FC = () => {
                 <td>{item.symbol}</td>
                 <td
                   style={{
-                    color: item.transactionType === "Buy" ? "green" : "red",
+                    color:
+                      item.transactionType.toLowerCase() === "buy"
+                        ? "green"
+                        : "red",
                   }}
                 >
                   {item.transactionType}

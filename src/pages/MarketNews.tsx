@@ -38,7 +38,9 @@ const MarketNews: React.FC = () => {
 
   return (
     <Container className="mt-4">
-      <h2 className="mb-4">Market News</h2>
+      <h2 className="mb-4 text-center">
+        Breaking Stock News: Trends You Can’t Miss!
+      </h2>
 
       {loading ? (
         <div className="text-center">
@@ -48,16 +50,16 @@ const MarketNews: React.FC = () => {
         <Alert variant="danger">{error}</Alert>
       ) : (
         <Row>
-          {news.slice(0, 6).map((item) => (
+          {news.slice(0, 18).map((item) => (
             <Col md={4} key={item.id} className="mb-4">
               <Card>
-                <Card.Img variant="top" src={item.image} alt={item.headline} />
+                {/* <Card.Img variant="top" src={item.image} alt={item.headline} /> */}
                 <Card.Body>
                   <Card.Title>{item.headline}</Card.Title>
                   <Card.Text>{item.summary.slice(0, 100)}...</Card.Text>
                   <a
                     href={item.url}
-                    className="btn btn-dark"
+                    className="btn btn-primary"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

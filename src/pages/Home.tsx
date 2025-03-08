@@ -46,8 +46,6 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <AppNavbar />
-
       <MarketNews />
     </>
   );

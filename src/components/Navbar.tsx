@@ -62,10 +62,10 @@ const AppNavbar: React.FC = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg" className="fixed-top">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            Stock Market App
+            InvestGrow
           </Navbar.Brand>
           <Nav className="ms-auto">
             {token && (

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Table, Container, Spinner, Alert } from "react-bootstrap";
 import axios from "axios";
 import { useSelector } from "react-redux";
+import PnLChart from "../charts/PnLChart";
 
 interface PnLData {
   pnLId: number;
@@ -37,7 +38,7 @@ const ProfitLoss: React.FC = () => {
   return (
     <Container className="mt-4">
       <h2 className="mb-4">Profit & Loss History</h2>
-
+      <PnLChart />
       {loading ? (
         <div className="text-center">
           <Spinner animation="border" variant="dark" />

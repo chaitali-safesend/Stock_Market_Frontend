@@ -22,7 +22,6 @@ const Watchlist: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const navigate = useNavigate();
-
   useEffect(() => {
     const fetchWatchlist = async () => {
       try {

@@ -86,7 +86,6 @@ const StockListing: React.FC = () => {
             <tr>
               <th>Symbol</th>
               <th>Company Name</th>
-              <th>Country</th>
               <th>Price ($)</th>
               <th>Watchlist</th>
             </tr>
@@ -100,7 +99,6 @@ const StockListing: React.FC = () => {
               >
                 <td>{stock.symbol}</td>
                 <td>{stock.companyName}</td>
-                <td>{stock.country || "N/A"}</td>
                 <td>${stock.price.toFixed(2)}</td>
                 <td>
                   <Button

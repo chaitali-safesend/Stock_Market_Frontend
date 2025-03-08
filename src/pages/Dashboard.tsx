@@ -61,6 +61,18 @@ const Dashboard: React.FC = () => {
         <Col md={8} sm={10} xs={12}>
           <Card
             className="dashboard-card text-center"
+            onClick={() => navigate("/portfolio")}
+          >
+            <Card.Body>
+              <i className="bi bi-eye card-icon"></i>
+              <Card.Title>Portfolio</Card.Title>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col md={8} sm={10} xs={12}>
+          <Card
+            className="dashboard-card text-center"
             onClick={() => navigate("/pnl")}
           >
             <Card.Body>
